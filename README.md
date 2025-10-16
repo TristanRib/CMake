@@ -14,7 +14,16 @@ Windows (PowerShell):
 mkdir build; cd build; cmake ..; cmake --build . --config Release
 ```
 
+
+Push with token to a remote (HTTPS)
+
+```text
+repo_uploader <source> <repo_path> "message" --push --git-token <TOKEN> --remote-url https://github.com/owner/repo.git --branch main
+```
+
+Notes about token usage
 Linux/macOS:
+- Do not hardcode tokens in scripts or share the command with others.
 
 ```bash
 mkdir build; cd build; cmake ..; make
